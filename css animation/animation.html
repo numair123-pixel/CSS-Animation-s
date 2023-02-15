@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>Broomstick Animation</title>
+ 
+  <style>
+    body {
+      padding: 50px;
+    }
+    #container {
+      background-color: skyblue; /* this is the background sky*/
+      height: 300px;
+      text-align: center;/* this will align the image to the centere of the border*/
+    }
+    #broom {
+     animation-name: fly; /*this is the name of the animation*/
+    animation-duration: 2s;/*this is the time the animation will take to complete once*/
+    animation-iteration-count: infinite;/*this will tell how many times the animation repeats*/
+    }  
+    @keyframes fly {  /*this tells how to move the broom*/
+    0% {
+        transform: translateY(20px);/*The transform property applies a 2D or 3D transformation to an element. */
+    }
+    50% {
+        transform: translateY(60px);/*This property allows you to rotate, scale, move, etc.*/
+    }
+    100% {
+        transform: translateY(20px);/*translateY() CSS function to move our item up and down along the Y axis.*/
+    }
+}
+  </style>
+</head>
+ 
+<body>
+  <div id="container">
+    <img id="broom" src="https://github.com/robgmerrill/online-course-images/blob/master/broom.png?raw=true"/>
+  </div>
+</body>
+ 
+</html>

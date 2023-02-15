@@ -1,0 +1,69 @@
+<html>
+    <style>
+    #title {
+
+        text-align: center;
+        
+        animation-name: drop;
+        
+        animation-duration: 3s;
+        
+        }
+
+        @keyframes drop { 0% {
+
+     transform: translateY(-100px);
+
+        }
+
+    100%{
+
+        transform: translateY(0);
+
+    }
+    }       
+        #circle { background-color: skyblue;
+
+        height: 100px;
+
+        width: 100px;
+
+        border-radius: 50%;
+
+        margin: 100px auto;
+
+        animation: disappear 3s infinite alternate linear /* these are all the code for naming, looping etc the animation in one code*/
+        }
+
+        @keyframes disappear {
+
+            0% {
+
+    opacity: 1;
+
+        }
+
+            50% {
+
+    opacity: .5;
+
+        }
+
+            100% {
+
+    opacity: 0;
+
+        }
+        }
+
+        
+        </style>
+    <div>
+
+    <h1 id="title">The Blue Dot</h1> 
+        <div id="circle"></div>
+    
+    <p id="about">The title is going to appear in about 5 seconds</p>
+    
+    </div>
+    </html>
